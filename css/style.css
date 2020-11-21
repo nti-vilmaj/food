@@ -1,1 +1,65 @@
-/* Denna fil skall innehålla din CSS kod */
+*{
+    margin:0;
+}
+
+#gridwrapper{
+    display:grid;
+    height:150vh;
+    width: 100vw;
+    grid-template-columns: repeat(6 *1fr);
+    grid-template-rows: 1fr 1fr 0.5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+    grid-template-areas:
+    'he he he he he he'
+    'he he he he he he'
+    'na na na na na na'
+    'a1 a1 a1 a1 a1 a1'
+    'a1 a1 a1 a1 a1 a1'
+    'a1 a1 a1 a1 a1 a1'
+    'a2 a2 a2 a2 a2 a2'
+    'a2 a2 a2 a2 a2 a2'
+    'a2 a2 a2 a2 a2 a2'
+    'fo fo fo fo fo fo';
+}
+
+#header{
+    grid-area: he;
+    background-color: rgb(187, 64, 64);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logga{
+    height: 300px;
+    width: 300px;
+}
+
+#nav{
+    display: grid;
+    grid-area: na;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap:2px;
+   
+
+}
+
+.innernav{
+    background-color: rgb(34, 31, 31)    ;
+  
+}
+
+#article1{
+    grid-area: a1;
+    background-color: brown;
+}
+
+#article2{
+    grid-area: a2;
+    background-color: cadetblue;
+}
+
+#footer{
+    grid-area: fo;
+    background-color: crimson;
+}

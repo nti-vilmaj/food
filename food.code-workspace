@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../grid"
+		},
+		{
+			"path": "../covid-19"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "food"
+	}
+}
