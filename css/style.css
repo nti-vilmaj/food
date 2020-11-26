@@ -4,10 +4,10 @@
 
 #gridwrapper{
     display:grid;
-    height:150vh;
+    height:200vh;
     width: 100vw;
     grid-template-columns: repeat(6 *1fr);
-    grid-template-rows: 1fr 1fr 0.5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 0.5fr 2fr 2fr 1fr 1fr 1fr 1fr 1fr ;
     grid-template-areas:
     'he he he he he he'
     'he he he he he he'
@@ -19,11 +19,13 @@
     'a2 a2 a2 a2 a2 a2'
     'a2 a2 a2 a2 a2 a2'
     'fo fo fo fo fo fo';
+    background-color: rgb(14, 12, 12,);
 }
 
 #header{
     grid-area: he;
-    background-color: rgb(187, 64, 64);
+    /* background-color:brown ; */
+    background-color: rgb(121, 147, 201);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -39,27 +41,80 @@
     display: grid;
     grid-area: na;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap:2px;
+    
    
 
 }
 
 .innernav{
-    background-color: rgb(34, 31, 31)    ;
+    background-color: rgb(34, 31, 31);
+    text-align: center;
+    
+   
   
+}
+
+.boka{
+    text-align: right;
+    border-left:solid pink 2px;
+
+}
+
+.info{
+    text-align: left;
+    border-right: solid pink 2px;
+    ;
 }
 
 #article1{
     grid-area: a1;
-    background-color: brown;
+    background-color:rgb(187, 64, 64);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../img/laxsuchi.png");
+}
+
+.lax{
+    border: double 10px rgb(29, 27, 27);
+    width: 80%;
+    height: 100%;
 }
 
 #article2{
     grid-area: a2;
-    background-color: cadetblue;
+    background-color:  rgb(34, 31, 31);
 }
 
 #footer{
     grid-area: fo;
-    background-color: crimson;
+    /* background-color: brown ; */
+    background-color: rgb(121, 147, 201);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    align-self: baseline;
+    white-space: pre ;
+}
+
+h2{
+    color: rgb(222, 230, 222);
+    margin-top: 2%;
+   flex-direction: column;
+
+}
+
+a{
+    text-decoration: none;
+    
+}
+
+.textfooter{
+    font-size: 14px;
+    
+}
+
+.te{
+ align-self: baseline;
 }
