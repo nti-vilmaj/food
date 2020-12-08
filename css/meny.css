@@ -36,7 +36,12 @@ body{
 
 }
 
-
+.divhe2{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
 
 .logga{
     height: 150px;
@@ -129,8 +134,39 @@ background-color: whitesmoke;
 
 h2{
     color: black;
+   
+}
+
+.bokabord{
+    text-align: left;
+    font-size: 40px;
+    border: black solid 5px;
+    border-radius: 10%;
+}
+
+.omoss{
+    text-align: right;
+    font-size: 40px;
+    border: black solid 5px;
+    border-radius: 10%;
+    
+    
 }
 
 a{
     text-decoration: none;
+
+}
+
+h3{
+    text-align: center;
+    font-size: 30px;
+}
+
+
+p{
+    text-align: center;
+    margin: 30px;
+    font-size: 17px;
+    
 }
