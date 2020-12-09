@@ -17,7 +17,7 @@
     'as1 a2 a2 a2 a2 as2'
     'as1 fo fo fo fo as2';
     grid-template-columns: 0.5fr 1fr 1fr 1fr 1fr 0.5fr;
-    grid-template-rows: 0.5fr 0.5fr 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr ;
+    grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr ;
    
 }
 body{

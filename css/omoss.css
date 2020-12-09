@@ -1,0 +1,110 @@
+*{
+    margin:0;
+}
+
+#GridWrapper{
+   display:grid;
+    height: 150vh;
+    width: 100vw;
+    grid-template-columns: repeat(6* 1fr);
+    grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr;
+    grid-template-areas:
+    'he he he he he he'
+    'se se se se se se'
+    'se se se se se se'
+    'a1 a1 a1 a2 a2 a2'
+    'a1 a1 a1 a2 a2 a2'
+    'a3 a3 a3 a3 a3 a3'
+    'a3 a3 a3 a3 a3 a3'
+    'a3 a3 a3 a3 a3 a3'
+    'fo fo fo fo fo fo';
+
+}
+
+#header{
+    grid-area: he;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr;
+    
+}
+
+.innerhe{
+    background-color: rgb(197,12,46);   
+}
+
+.innerhe2{
+    background-color: rgb(197,12,46); 
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.logga{
+    height: 150px;
+    width: 150px;
+    margin-left: 20px;
+}
+
+#section{
+    grid-area: se;
+    display:grid;
+    grid-template-columns:1fr;
+    grid-template-rows:1fr ;
+    background-color: rgb(207, 189, 189);
+}
+
+.innerse{
+    background-color: black;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#rticle1{
+    grid-area: a1;
+}
+
+#article2{
+    grid-area: a2;
+}
+
+#article3{
+    grid-area: a3;
+}
+
+#footer{
+    grid-area:fo;
+    background-color: rgb(197,12,46);
+}
+
+.bokabord{
+    text-align: left;
+    font-size: 40px;
+    border: black solid 5px;
+    border-radius: 10%;
+}
+
+.meny{
+    text-align: right;
+    font-size: 40px;
+    border: black solid 5px;
+    border-radius: 10%;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1{
+    text-align: center;
+    font-size: 100px;
+}
+
+h2{
+    color: black;
+    background-color: rgb(176, 50, 50);
+}

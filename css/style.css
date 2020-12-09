@@ -36,14 +36,7 @@
     width: 300px;
 }
 
-#nav{
-    display: grid;
-    grid-area: na;
-    grid-template-columns: 1fr 1fr 1fr;
-    
-   
 
-}
 
 .innernav{
     background-color: rgb(34, 31, 31);
