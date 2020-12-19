@@ -19,7 +19,7 @@
     'a2 a2 a2 a2 a2 a2'
     'fo fo fo fo fo fo'
     'fo fo fo fo fo fo';
-    background-color: rgb(14, 12, 12,);
+   background-color: whitesmoke;
 }
 
 #header{
@@ -65,6 +65,8 @@
     justify-content: space-evenly;
     align-items: flex-start;
     background-image: url(../img/Dumplings.jpg);
+    border-top: solid whitesmoke 2px; 
+    border-bottom: solid whitesmoke 2px;
 }
 
 .boka{
@@ -73,18 +75,40 @@
 
 #article2{
     grid-area: a2;
-    background-color: whitesmoke;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap:2px;
+    background-color: rgb(14, 12, 12);
+    
+}
+
+.innera21{
+    text-align: center; 
+   
+}
+
+.innera22{
+    text-align: center;
+    border-left: solid whitesmoke 2px; 
 }
 
 #footer{
     grid-area: fo;
-    display:flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
     background-color:rgb(197,12,46);
-  
+    border-top: solid whitesmoke 2px;
     
-  
+}
+.innerfooter1{
+    display:flex;
+    justify-content: flex-end;
+}
+
+.lampa{
+    height:200px;
 }
 
 h2{
@@ -109,7 +133,39 @@ a{
     font-size: 20px;
     flex:1;
     text-align: center;
+    margin-top: 120px;
     
 }
 
+.öppet{
+    color:whitesmoke;
+    font-size: 30px;
+    text-align: center;
+    margin:30px;
+}
 
+
+h3{
+    color: whitesmoke;
+    font-size: 35px;
+    margin-top: 90px;
+   
+}
+
+.dagenstext{
+    color: whitesmoke;
+    font-size: 30px;
+    margin: 30px;
+    max-width: 60%;
+    margin-left: 200px;
+    line-height: 1.8;
+
+}
+
+.footerlink{
+    text-align: center;
+    color: black;
+    font-size: 20px;
+    margin-top: 40px;
+    
+}

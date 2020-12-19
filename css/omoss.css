@@ -4,21 +4,28 @@
 
 #GridWrapper{
    display:grid;
-    height: 150vh;
+    height: 200vh;
     width: 100vw;
     grid-template-columns: repeat(6* 1fr);
-    grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr;
+    grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr;
     grid-template-areas:
     'he he he he he he'
-    'se se se se se se'
-    'se se se se se se'
-    'a1 a1 a1 a2 a2 a2'
-    'a1 a1 a1 a2 a2 a2'
-    'a3 a3 a3 a3 a3 a3'
-    'a3 a3 a3 a3 a3 a3'
-    'a3 a3 a3 a3 a3 a3'
-    'fo fo fo fo fo fo';
+    'as se se se se as2'
+    'as1 se se se se as2'
+    'as1 a1 a1 a2 a2 as2'
+    'as1 a1 a1 a2 a2 as2'
+    'as1 a3 a3 a3 a3 as2'
+    'as1 a3 a3 a3 a3 as2'
+    'as1 a3 a3 a3 a3 as2'
+    'as1 a3 a3 a3 a3 as2'
+    'as1 fo fo fo fo as2';
 
+}
+
+body{
+    background-image: url(../img/lykta2.png);
+    background-size: 20%;
+    background-attachment: fixed;
 }
 
 #header{
@@ -53,27 +60,60 @@
     display:grid;
     grid-template-columns:1fr;
     grid-template-rows:1fr ;
-    background-color: rgb(207, 189, 189);
+    background-color: whitesmoke;
+   
 }
 
 .innerse{
-    background-color: black;
+    background-color: rgb(14, 12, 12);
     margin-left: 200px;
     margin-right: 200px;
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
-#rticle1{
+#article1{
     grid-area: a1;
+    background-color: whitesmoke;
 }
 
 #article2{
     grid-area: a2;
-}
+    background-color: whitesmoke;
+
+    
+} 
 
 #article3{
     grid-area: a3;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  
+
+}
+
+.innera31{
+    background-color: whitesmoke;
+    display:flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.innera3{
+background-color: whitesmoke;
+}
+
+
+#aside1{
+    grid-area: as1;
+    width: 10vw;
+   
+}
+
+#aside2{
+    grid-area:as2;
+    width: 10vw;
 }
 
 #footer{
@@ -107,4 +147,66 @@ h1{
 h2{
     color: black;
     background-color: rgb(176, 50, 50);
+}
+
+h3{
+    color: whitesmoke;
+    text-align: start;
+    font-size: 30px;
+    margin: 10px;
+    text-decoration: underline white;
+}
+
+.öppet{
+    color: whitesmoke;
+    font-size: 30px;
+    text-align: center;
+    margin:30px;
+}
+
+.rubrika3{
+    font-size: 40px;
+    text-align: center;
+    margin-right: 30px;
+   
+}
+
+.texta3{
+    max-width: 70%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.textdiv{
+    max-width: 70%;
+    text-align: center;
+    margin-top: 20px; 
+    margin-left: 100px;
+}
+
+.textkontakt{
+    text-align: center;
+    border: solid rgb(14, 12, 12) 5px;
+    font-size: 30px;
+    max-width: 60%;
+    margin-left: 150px;
+    margin-top: 100px;
+    background-color: rgb(14, 12, 12);
+    color:white;
+}
+
+.karta{
+    margin-left: 90px;
+    border: solid black 3px;
+}
+
+.textfooter{
+    font-size:20px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.makingdumplings{
+    margin-right:70px;
+    width: 500px;
 }

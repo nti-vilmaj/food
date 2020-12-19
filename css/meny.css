@@ -172,12 +172,29 @@ h3{
 }
 
 
-p{
+.divtext1{
     text-align: center;
     margin: 30px;
     font-size: 17px;
-    /* max-width: 70%; */
-    font-family: sans-serif;
+    max-width: 70%;
     flex:1;
+    margin-left: 100px;
     
+}
+
+.divtext2{
+    text-align: center;
+    margin: 30px;
+    font-size: 17px;
+    max-width: 70%;
+    flex:1;
+    margin-right: 100px;
+    
+}
+
+.textfooter{
+    font-size:20px;
+    text-align: center;
+    margin-top: 40px;
+
 }
